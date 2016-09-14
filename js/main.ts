@@ -11,7 +11,7 @@ var storeResult: OMDB;
 
 class OMDB {
     title: string;
-    year: number;
+    year: string;
     rated: string;
     released: string;
     runtime: string;
@@ -131,7 +131,7 @@ btnSearch.onclick = function (): void {
         }
     });
 }
-function getTrialer(t:string, y:number) {
+function getTrialer(t:string, y:string) {
     var url = 'http://www.youtube.com/embed?listType=search&list=';
     var searchQuery = t + " year " + y + " trialer";
     var targetUrl = url + searchQuery;
