@@ -53,7 +53,7 @@ function showOutput(data) {
     var str = data.poster;
     if (str != "N/A") {
         var newStr = str.replace("http", "https");
-        $("#poster").attr("src", data.poster);
+        $("#poster").attr("src", newStr);
         console.log(newStr);
     }
     $("#story").text(data.plot);
