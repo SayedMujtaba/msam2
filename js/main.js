@@ -49,7 +49,13 @@ var OMDB = (function () {
 /* Show data from IMDB server*/
 function showOutput(data) {
     $("#title").text(data.title);
-    $("#poster").attr("src", data.poster);
+    console.log(data.poster);
+    var str = data.poster;
+    if (str != "N/A") {
+        var newStr = str.replace("http", "https");
+        $("#poster").attr("src", data.poster);
+        console.log(newStr);
+    }
     $("#story").text(data.plot);
     $("#released").text(data.released);
     $("#rated").text(data.rated);
