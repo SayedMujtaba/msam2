@@ -1,5 +1,5 @@
 /*Buttons and Forms tags*/
-var form = $("#searchByTitle");
+var form = $("#searchByTitle")[0];
 var btnSearch = $("#btnSearch-title")[0];
 var btnReset = $("#btnReset-title")[0];
 /*Link to redirect to imdb website reviews*/
