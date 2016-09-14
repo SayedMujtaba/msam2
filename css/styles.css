@@ -1,0 +1,97 @@
+/*
+Notice how you are also able to specify different browser behaviour using the prefixes:
+
+-o- for Presto based (Opera -NB: deprecated, moved to Webkit based)
+-moz- for Gecko based (Firefox)
+-webkit- for Webkit based (Chrome/Safari)
+Note: if you have multiple css files, the order in which you include them in the html file matters as they are "cascading" and will override.
+*/
+html {
+  background: url("http://www.publicdomainpictures.net/pictures/170000/velka/grunge-background-14635619239LT.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  background-color: transparent; }
+  body #page-container {
+    margin: 10px; }
+
+/*Height is set so #sidePanel can be full size*/
+.row.content {
+  height: 450px; }
+
+/*Set text alignment, padding and height*/
+body #sidePanel {
+  text-align: left;
+  padding-top: 20px;
+  height: 100%; }
+
+body #videoPlayer {
+  padding-top: 20px;
+  height: 100%; }
+
+.well {
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/* On small screens, set height to 'auto' for body #sidePanel and grid */
+@media screen and (max-width: 767px) {
+  body #sidePanel {
+    height: auto;
+    padding: 15px; }
+  .row.content {
+    height: auto; } }
+
+body #output {
+  text-align: left;
+  color: sandybrown; }
+  body #output #TitleImg {
+    text-align: center; }
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.5); }
+  .jumbotron span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; }
+
+h2#page-header {
+  color: sandybrown;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+select#plot {
+  color: black;
+  width: 130px;
+  padding: 5px;
+  margin-bottom: 10px; }
+
+legend {
+  color: sandybrown; }
+
+label {
+  color: sandybrown;
+  padding: 5px; }
+
+/*-----------Makes side panel more interactive------------ */
+input {
+  color: black; }
+  input[type=text], input[type=number] {
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; }
+    input[type=text]:focus, input[type=number]:focus {
+      width: 100%; }
+
+/*----------------------------------------------------------*/
